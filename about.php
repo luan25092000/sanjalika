@@ -56,9 +56,9 @@
                             <a href="javascript:void(0)" class="dropbtn"><?= isset($_SESSION['is_login']) ? 'Hi, ' . $_SESSION['name'] : 'Login' ?></a>
                             <div class="dropdown-content">
                                 <?php if (!isset($_SESSION['is_login'])): ?>
-                                    <a href="./login" class="drop">Login</a>
+                                    <a href="Login" class="drop">Login</a>
                                 <?php else: ?>
-                                    <a href="./logout" class="drop">Logout</a>
+                                    <a href="Logout" class="drop">Logout</a>
                                 <?php endif; ?>
                             </div>
                         </li>
