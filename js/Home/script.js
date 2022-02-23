@@ -3,7 +3,7 @@ $(document).ready(function() {
         var date = $(this).val();
         var baseUrl = window.location.origin;
         $.ajax({
-            url: baseUrl + '/sanjalika/filter',
+            url: baseUrl + '/sanjalika/filter.php',
             type: 'POST',
             data: {
                 date: date
@@ -51,7 +51,7 @@ function addToCart()
     var id_arr = $("input[name='ids[]']").map(function(){return $(this).val();}).get();
     var baseUrl = window.location.origin;
     $.ajax({
-        url: baseUrl + '/sanjalika/add-to-cart',
+        url: baseUrl + '/sanjalika/add-to-cart.php',
         type: 'POST',
         data: {
             qty_arr: qty_arr,
