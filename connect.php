@@ -1,11 +1,19 @@
 <?php
-    $host = "localhost";
+    // $host = "localhost";
 
-    $username = "root";
+    // $username = "root";
 
-    $password = "";
+    // $password = "";
 
-    $dbname = "webbanhang";
+    // $dbname = "webbanhang";
+
+    $host = "remotemysql.com";
+
+    $username = "DbIwHvDYIP";
+
+    $password = "18UmnLV3JV";
+
+    $dbname = "DbIwHvDYIP";
 
     $con = mysqli_connect($host, $username, $password);
     mysqli_select_db($con, $dbname);
